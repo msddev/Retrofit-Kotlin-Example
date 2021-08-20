@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         getData(false)
         getDataButton.setOnClickListener {
+            quoteTextView.text = getString(R.string.loading_quote)
             getData(true)
         }
     }

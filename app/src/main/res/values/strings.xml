@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Retrofit Part</string>
+    <string name="loading_quote">Loading..</string>
 </resources>
