@@ -5,19 +5,26 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.mkdev.retrofitpart.R
 import com.mkdev.retrofitpart.models.QuoteModel
+import com.mkdev.retrofitpart.repository.ApiRepository
 import com.mkdev.retrofitpart.viewmodel.MainActivityViewModel
+import com.mkdev.retrofitpart.viewmodel.MainViewModelFactory
 import kotlinx.android.synthetic.main.activity_main.*
-import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
 
-    private val mainViewModel: MainActivityViewModel by viewModel()
+    private lateinit var mainViewModel: MainActivityViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        mainViewModel = ViewModelProvider(
+            this,
+            MainViewModelFactory(ApiRepository())
+        ).get(MainActivityViewModel::class.java)
 
         getData(false)
         getDataButton.setOnClickListener {
