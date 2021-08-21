@@ -20,7 +20,7 @@ Android Kotlin app to parse JSON data using [Retrofit2](https://github.com/squar
 
 ## License & Copyright
 ```
-Copyright 2021 Amin Hassani.
+Copyright 2021 Masoud Khoshkam.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
