@@ -1,5 +1,5 @@
 # Retrofit Kotlin Example
-Android Kotlin app to parse JSON data using [Retrofit2](https://github.com/square/retrofit) library with [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/) :blush:
+Android Kotlin app to parse JSON data using [Retrofit2](https://github.com/square/retrofit) library with [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/)
 
 ## Screenshots
 <img src="screenshots/screenshot_01.png" width="300">
